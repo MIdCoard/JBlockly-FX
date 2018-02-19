@@ -528,7 +528,7 @@ public class Block extends Region implements BlockGlobal{
 		for(BlockSlot slot:slots)
 			height += slot.getLineHeight() + vSpace;
 		
-		return getConnectionType()==ConnectionType.BUTTOM||getConnectionType()==ConnectionType.TOPANDBOTTOM?height-vSpace:height;
+		return getConnectionType()==ConnectionType.BOTTOM||getConnectionType()==ConnectionType.TOPANDBOTTOM?height-vSpace:height;
 	}
 
 	@Override
